@@ -50,4 +50,4 @@ const cardStyle = {
   background: "#111",
   fontSize: "22px",
   fontWeight: "bold" as const,
-};S
+};
