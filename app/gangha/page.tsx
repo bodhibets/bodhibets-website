@@ -34,7 +34,7 @@ export default function GanghaPage() {
           fontWeight: "bold",
         }}
       >
-        ← Back to Home
+        Back to Home
       </a>
     </main>
   );
