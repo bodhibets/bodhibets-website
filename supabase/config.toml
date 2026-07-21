@@ -1,5 +1,5 @@
-# Supabase local config
-# https://supabase.com/docs/guides/cli/config
+# Supabase project config
+# Project ref: d20dc2bc2a4542bd3469cbb563eae84e
 
 [api]
 enabled = true
@@ -16,6 +16,7 @@ major_version = 15
 [studio]
 enabled = true
 port = 54323
+apiUrl = "http://localhost:54321"
 
 [inbucket]
 enabled = true
@@ -26,10 +27,19 @@ enabled = true
 
 [auth]
 enabled = true
+port = 54325
 site_url = "http://localhost:3000"
+additional_redirect_urls = ["https://localhost:3000"]
+jwt_expiry = 3600
+enable_signup = true
 
-[functions.fetch-mls-scores]
-verify_jwt = false
+[auth.email]
+enable_signup = true
+double_confirm_changes = true
+enable_confirmations = false
 
-[functions.fetch-mlb-scores]
-verify_jwt = false
+[functions]
+enabled = true
+
+[analytics]
+enabled = false
